@@ -1,0 +1,205 @@
+:root {
+    --accent-color: #2196F3;
+    --main-font: 'Roboto',
+    sans-serif;
+    --secondary-font: 'Raleway',
+    sans-serif;
+    --add-background: #2F303A;
+    --subtitle-color:#757575;
+}
+
+.link {text-decoration: none;}
+
+.list {list-style: none;}
+
+body {
+    font-family: var(--main-font)
+    font-size: 14px;
+    font-weight: 700;
+    color: #212121; 
+}
+
+/* ==================COMPONENTS================= */
+.logo {
+    font-family: var(--secondary-font)
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+}
+
+
+.reg-section-title {
+font-size: 36px;
+line-height: 1.17x;
+text-align: center;
+letter-spacing: 0.03em;
+}
+
+/* ==================/COMPONENTS================= */
+
+/* ==================HEADER================= */
+.logo-span-header {
+    color: #212121
+}
+.menu-link {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: var(--accent-color);
+    ;
+}
+
+.contact-mail-header,
+.contact-phone-number-header {
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--subtitle-color);
+}
+
+.contact-mail-header:hover,
+.contact-mail-header:focus,
+.contact-phone-number-header:hover,
+.contact-phone-number-header:focus {
+    color: var(--accent-color);
+    ;
+}
+/* ==================/HEADER================= */
+
+/* ==================HERO================= */
+.hero-section {
+    background-color: var(--add-background);
+    width: 1600px;
+    height: 600px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1, 36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.modal-button {
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: var(--accent-color);
+    cursor: pointer;
+
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: #188CE8;
+}
+/* ==================/HERO================= */
+
+/* ==================SECTION BENEFITS================= */
+.benefit-name {
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.benefit-description {
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--subtitle-color);
+}
+/* ==================/SECTION BENEFITS================= */
+
+/* ==================SECTION OUR-TEAM================= */
+.team-member-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-member-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--subtitle-color);
+}
+
+/* ==================/SECTION OUR-TEAM================= */
+
+/* ==================PORTFOLIO================= */
+.portfolio-menu-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background-color: #F5F4FA;
+    cursor: pointer;
+}
+
+.portfolio-menu-button:hover,
+.portfolio-menu-button:focus {
+color: #FFFFFF;;
+    background-color: var(--accent-color);
+}
+
+.portfolio-item-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    }
+
+.portfolio-item-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--subtitle-color);
+}
+/* ==================/PORTFOLIO================= */
+
+/* ==================FOOTER================= */
+.footer {
+    background-color: var(--add-background);
+}
+
+.logo-span-footer {
+    color: #FFFFFF
+}
+
+.contact-mail-footer,
+.contact-phone-number-footer,
+.real-address {
+font-weight: 400;
+font-style: normal;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-mail-footer:hover,
+.contact-mail-footer:focus,
+.real-address:hover,
+.real-address:focus,
+.contact-phone-number-footer:hover,
+.contact-phone-number-footer:focus {
+    color: #FFFFFF;
+}
+
+/* ==================/FOOTER================= */
+
+
+
+
+
