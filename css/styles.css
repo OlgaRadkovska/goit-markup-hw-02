@@ -6,7 +6,11 @@
     --secondary-font: 'Raleway',
     sans-serif;
     --add-background: #2F303A;
+    --our-team-sec-bg: #F5F4FA;
     --subtitle-color:#757575;
+    --main-footer-color:rgba(255, 255, 255, 0.6);
+    --bg-page-color:#FFFFFF;
+    --alt-modal-btn-color: #188CE8;
 }
 
 .link {text-decoration: none;}
@@ -16,8 +20,8 @@
 body {
     font-family: var(--main-font);
     font-size: 14px;
-    font-weight: 700;
     color: var(--main-color); 
+    background-color: var(--bg-page-color) ;
 }
 
 /* ==================COMPONENTS================= */
@@ -31,8 +35,9 @@ body {
 
 
 .reg-section-title {
+    font-weight: 700;
 font-size: 36px;
-line-height: 1.17x;
+line-height: 1.17;
 text-align: center;
 letter-spacing: 0.03em;
 }
@@ -41,20 +46,27 @@ letter-spacing: 0.03em;
 
 /* ==================HEADER================= */
 .logo-span-header {
-    color: #212121;
+    color: var(--main-color);
 }
 .menu-link {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-color);
+
 }
 
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+.menu-link:active {
     color: var(--accent-color);
     ;
 }
+
+.menu-list .link.current {
+color: var(--accent-color);
+}
+
 
 .contact-mail-header,
 .contact-phone-number-header {
@@ -76,44 +88,52 @@ letter-spacing: 0.03em;
 /* ==================HERO================= */
 .hero-section {
     background-color: var(--add-background);
-    width: 1600px;
-    height: 600px;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1, 36;
     text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+      
+}
+
+.main-page-title {
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--bg-page-color);
 }
 
 .modal-button {
     font-family: var(--main-font) ;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--bg-page-color);
     background-color: var(--accent-color);
     cursor: pointer;
-
+    border:none;
+    border-radius: 4px;
+   
 }
 
 .modal-button:hover,
 .modal-button:focus {
-    background-color: #188CE8;
+    background-color: var(--alt-modal-btn-color);
 }
 /* ==================/HERO================= */
 
 /* ==================SECTION BENEFITS================= */
 .benefit-name {
-    line-height: 1.14px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 
 .benefit-description {
-    font-weight: 400;
+
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--subtitle-color);
@@ -121,6 +141,14 @@ letter-spacing: 0.03em;
 /* ==================/SECTION BENEFITS================= */
 
 /* ==================SECTION OUR-TEAM================= */
+
+.our-team {
+    
+    background-color: var(--our-team-sec-bg) ;
+}
+.our-team-list-item {
+    background-color: var(--bg-page-color);
+}
 .team-member-title {
     font-weight: 500;
     font-size: 16px;
@@ -130,14 +158,13 @@ letter-spacing: 0.03em;
 }
 
 .team-member-subtitle {
-    font-weight: 400;
+   
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--subtitle-color);
 }
-
 /* ==================/SECTION OUR-TEAM================= */
 
 /* ==================PORTFOLIO================= */
@@ -148,24 +175,26 @@ letter-spacing: 0.03em;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
-    background-color: #F5F4FA;
+    background-color: var(--our-team-sec-bg);
+    border:none;
+    border-radius: 4px;
     cursor: pointer;
 }
 
 .portfolio-menu-button:hover,
 .portfolio-menu-button:focus {
-color: #FFFFFF;
+color: var(--bg-page-color);
     background-color: var(--accent-color);
 }
 
 .portfolio-item-title {
     font-size: 18px;
+    font-weight: 700;
     line-height: 2;
     letter-spacing: 0.06em;
     }
 
 .portfolio-item-subtitle {
-    font-weight: 400;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.03em;
@@ -179,26 +208,28 @@ color: #FFFFFF;
 }
 
 .logo-span-footer {
-    color: #FFFFFF;
+    color: var(--bg-page-color);
 }
 
-.contact-mail-footer,
-.contact-phone-number-footer,
 .real-address {
-font-weight: 400;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--bg-page-color);
+}
+.contact-mail-footer,
+.contact-phone-number-footer {
 font-style: normal;
 line-height: 1.71;
 letter-spacing: 0.03em;
-color: rgba(255, 255, 255, 0.6);
+color: var(--main-footer-color);
 }
 
 .contact-mail-footer:hover,
 .contact-mail-footer:focus,
-.real-address:hover,
-.real-address:focus,
 .contact-phone-number-footer:hover,
 .contact-phone-number-footer:focus {
-    color: #FFFFFF;
+    color: var(--bg-page-color);
 }
 
 /* ==================/FOOTER================= */
